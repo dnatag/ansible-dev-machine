@@ -1,6 +1,13 @@
 - name: install docker
   pacman: name=docker state=present
+
 - name: enable service docker
   systemd:
     name: docker
     enabled: yes
+
+- name: adding {{user}} to docker group
+  user:
+    name: "{{user}}"
+    group: docker
+    append: yes
