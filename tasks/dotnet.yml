@@ -1,8 +1,10 @@
 # weird shitty error here, solve this later
-# - name: install dotnet
-#  aur: name={{item}} user={{user}}
-#  with_items:
+- name: install dotnet
+  aur: name={{item}} user={{user}}
+  with_items:
 #    - dotnet-runtime-2.0
 #    - dotnet-sdk-2.0
-- name: install mono
-  pacman: name=mono state=present
+    - mono-stable
+
+- name: install nuget
+  pacman: name=nuget state=present

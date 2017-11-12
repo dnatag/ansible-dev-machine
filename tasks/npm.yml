@@ -10,8 +10,3 @@
   npm:
     name: "tslint"
     global: yes
-
-- name: Install npm global gulp-cli
-  npm:
-    name: "gulp-cli"
-    global: yes
