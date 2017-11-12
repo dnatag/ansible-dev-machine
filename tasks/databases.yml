@@ -1,0 +1,6 @@
+- name: Create docker databases images
+  docker_container:
+    name: "{{item}}"
+    image: "{{item}}:latest"
+    with_items:
+      - postgres

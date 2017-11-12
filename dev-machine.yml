@@ -1,0 +1,16 @@
+- hosts: localhost
+  connection: local
+  become: yes
+  become_user: root
+  vars:
+    user: pedroraft
+    email: pedroraft@gmail.com
+  tasks:
+    - import_tasks: tasks/aur.yml
+    - import_tasks: tasks/utils.yml
+    - import_tasks: tasks/git.yml
+    - import_tasks: tasks/docker.yml
+    - import_tasks: tasks/ides.yml
+    - import_tasks: tasks/browsers.yml
+    - import_tasks: tasks/dotnet.yml
+    - import_tasks: tasks/node.yml

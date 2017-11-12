@@ -1,0 +1,6 @@
+- name: install utils
+  # libcurl-openssl pgp fails
+  aur: name={{item}} user={{user}} skip_pgp=yes
+  with_items:
+    - preload
+    - libcurl-openssl-1.0

@@ -1,0 +1,8 @@
+- name: install ide(s)
+  aur: name={{item}} user={{user}}
+  with_items:
+     - rider
+     - pycharm-professional
+     - webstorm
+     - atom
+     - visual-studio-code
