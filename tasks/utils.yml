@@ -4,3 +4,6 @@
   with_items:
     - preload
     - libcurl-openssl-1.0
+
+- name: install vlc
+  pacman: name=vlc state=present

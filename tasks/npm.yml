@@ -1,0 +1,17 @@
+- name: install yarn
+  pacman: name=yarn state=present
+
+- name: Install npm global @angular/cli
+  npm:
+    name: "@angular/cli"
+    global: yes
+
+- name: Install npm global tslint
+  npm:
+    name: "tslint"
+    global: yes
+
+- name: Install npm global gulp-cli
+  npm:
+    name: "gulp-cli"
+    global: yes
