@@ -1,12 +1,12 @@
 - name: install yarn
   pacman: name=yarn state=present
 
-- name: Install npm global @angular/cli
+- name: Install npm global packages
   npm:
-    name: "@angular/cli"
+    name: "{{item}}"
     global: yes
-
-- name: Install npm global tslint
-  npm:
-    name: "tslint"
-    global: yes
+  with_items:
+  - "@angular/cli"
+  - "tslint"
+  - "cordova"
+  - "ionic"
