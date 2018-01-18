@@ -3,9 +3,6 @@
 #    /bin/bash -c "source ~/.nvm/nvm.sh && nvm install node && nvm alias default node"
 #    creates=/home/{{ ansible_user_id }}/.nvm/alias
 
-- name: install yarn
-  pacman: name=yarn state=present
-
 - name: Install npm global packages
   npm:
     name: "{{item}}"
