@@ -1,6 +1,3 @@
-- name: install docker
-  pacman: name=docker state=present
-
 - name: enable service docker
   systemd:
     name: docker

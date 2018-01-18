@@ -1,6 +1,0 @@
-- name: install browsers
-  aur: name={{item}} user={{user}}
-  with_items:
-     - google-chrome
-     - firefox-developer
-     - postman-bin

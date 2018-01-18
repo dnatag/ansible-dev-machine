@@ -1,5 +1,30 @@
-- name: install yaourt
-  pacman: name={{item}} state=present
+- name: install yaourt packages
+  # TODO: skip_pgp is here to weird error, remove it later
+  # libcurl-openssl pgp fails
+  aur: name={{item}} user={{user}} skip_pgp=yes
   with_items:
-    - base-devel
-    - yaourt
+    # browsers
+    - google-chrome
+    - firefox-developer
+    - postman-bin
+    # node
+    - nvm
+    # CSHARP
+    # - dotnet-runtime-2.0
+    # - dotnet-sdk-2.0
+    - mono-stable
+    # IDES and programming stuff
+    - rider
+    - pycharm-professional
+    - webstorm
+    - atom
+    - visual-studio-code
+    - datagrip
+    - mysql-workbench
+    - gitkraken
+    # UTILS
+    - preload
+    - libcurl-openssl-1.0
+    - slack-desktop
+    - popcorntime
+    - spotify

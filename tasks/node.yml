@@ -1,7 +1,0 @@
-- name: install nvm
-  aur: name=nvm user={{user}}
-
-#- name: Install node and set version
-#  shell: >
-#    /bin/bash -c "source ~/.nvm/nvm.sh && nvm install node && nvm alias default node"
-#    creates=/home/{{ ansible_user_id }}/.nvm/alias
