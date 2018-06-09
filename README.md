@@ -1,4 +1,5 @@
-# Ansible script for setting up my laptop WIP
+# Ansible script for setting up my laptop
+# I switched to osx, this project is dead but feel free to fork and hack away
 # MANJARO - arch based
 ## todo:
   - solve netcore install
